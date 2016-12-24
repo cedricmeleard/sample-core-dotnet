@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+    background-color: #2196F3;
+}
+* {
+    box-sizing: border-box;
+}
+.main-header {
+    color: white;
+    background-color: #3F51B5;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.main-header a {
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.container {
+    color:white;
+    height:100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container.home {
+    background-color: #2196F3;
+}
+.container.about {
+    background-color: #E91E63;
+}
+.container .wrapper {
+    max-width: 900px;
+}

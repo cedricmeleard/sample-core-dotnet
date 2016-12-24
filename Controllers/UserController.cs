@@ -2,12 +2,11 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using UserApi.Models;
 
-namespace UserApi.Controllers
+namespace aspnetcoreapp.Controllers
 {
     [Route("api/[controller]")]
     public class UserController : Controller
-    {
-         
+    {    
         public UserController(IUserRepository userItems)
         {
             UserItems = userItems;
