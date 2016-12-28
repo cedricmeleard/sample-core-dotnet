@@ -11,19 +11,5 @@ namespace aspnetcoreapp.Controllers
             ViewBag.Message = "Home JS View";
             return View();
         }
-     
-
-        [HttpGet]
-        [Route("api/[controller]/home")]
-        public string GetHome()
-        {
-            return "Home View - Powered by ASP.NET Core";
-        }
-        [HttpGet]
-        [Route("api/[controller]/about")]
-        public string GetAbout()
-        {
-            return "About View - Powered by ASP.NET Core";
-        }
     }
 }

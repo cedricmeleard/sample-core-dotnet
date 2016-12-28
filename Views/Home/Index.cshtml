@@ -1,10 +1,12 @@
-@{
-    Layout = "_Layout";
-}
+@{ Layout = "_Layout"; }
 <div class="container home">
     <div class="wrapper">
         <h1>@ViewBag.Message</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ullam, corporis ad, necessitatibus excepturi consectetur aliquam, doloremque omnis ea architecto atque numquam reiciendis incidunt. Mollitia voluptatibus hic, eaque a quibusdam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ullam, corporis ad, necessitatibus excepturi consectetur
+            aliquam, doloremque omnis ea architecto atque numquam reiciendis incidunt. Mollitia voluptatibus hic, eaque a
+            quibusdam.</p>
+        <ul>
+            @foreach (var user in @ViewBag.Users) { @await Component.InvokeAsync("UserItem", user ) }
+        </ul>
     </div>
 </div>
-

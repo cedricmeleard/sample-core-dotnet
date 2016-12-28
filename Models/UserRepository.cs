@@ -11,8 +11,8 @@ namespace UserApi.Models
 
         public UserRepository()
         {
-            Add( new UserItem { Name = "User1" } );
-            Add( new UserItem { Name = "User1" } );
+            Add( new UserItem { Name = "Michel" } );
+            Add( new UserItem { Name = "Jacquie" } );
         }
 
         public IEnumerable<UserItem> GetAll()
