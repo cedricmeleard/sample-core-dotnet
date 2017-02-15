@@ -4,8 +4,15 @@
         <h1>@ViewBag.Message</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ullam, corporis ad, necessitatibus excepturi consectetur
             aliquam, doloremque omnis ea architecto atque numquam reiciendis incidunt. Mollitia voluptatibus hic, eaque a
-            quibusdam.</p>
-        <ul>
+            quibusdam.
+        </p>
+        <form id='searchForm'>
+            <div class="centered-field">Recherche
+                <!-- This will trigger an event to submit your form when your textbox is changed -->
+                @Html.TextBox("Search", null, new { onchange="searchForm.submit();"})
+            </div>
+        </form>
+        <ul class="user-list">
             @foreach (var user in @ViewBag.Users) { @await Component.InvokeAsync("UserItem", user ) }
         </ul>
     </div>

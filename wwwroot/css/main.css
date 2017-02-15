@@ -4,8 +4,20 @@ html, body {
     font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
     background-color: #2196F3;
 }
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 * {
     box-sizing: border-box;
+}
+input[type="text"] {
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    margin: 5px 10px;
+    min-width: 200px;
 }
 .main-header {
     color: white;
@@ -42,4 +54,33 @@ html, body {
 }
 .container .wrapper {
     max-width: 900px;
+}
+.centered-field {
+    text-align: center;
+}
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.user-item {
+    border-radius: 3px;
+    background-color: white;
+    color:#2196F3;
+    padding: 10px;
+    margin: 16px 0;
+    width: 33.33333vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, .28);
+}
+.user-item .headshot {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+}
+.user-item .user-title {
+    font-size: 1.4em;
 }

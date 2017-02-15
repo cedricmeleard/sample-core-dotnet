@@ -13,9 +13,9 @@ namespace aspnetcoreapp.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<UserItem> GetAll()
+        public IEnumerable<UserItem> GetAll([FromQuery]string Search)
         {
-            return UserItems.GetAll();
+            return UserItems.GetAll(Search);
         }
 
         [HttpGet("{id}", Name = "GetUser")]

@@ -1,5 +1,10 @@
 @model UserApi.Models.UserItem
 
-<li>
-    <p>Name: @Model.Name</p>
+<li class="user-item">
+    <img class="headshot" src="@Model.Headshot" alt="@Model.Name" />
+    <p  class="user-title">@Model.Name</p>
+    <p>@Model.Age years old</p>
+    <p>@Model.Archetype</p>
+    <p>@Model.Income $</p>
+    <p>@Model.Location</p>
 </li>

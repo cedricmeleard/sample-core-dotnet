@@ -13,10 +13,10 @@ namespace aspnetcoreapp.Controllers
         }
 
 
-        public IActionResult Index() {
+        public IActionResult Index([FromQuery]string Search) {
             ViewBag.Message = "Home View - Powered by ASP.NET Core";
-            ViewBag.Users = UserRepository.GetAll();
-
+            ViewBag.Users = UserRepository.GetAll(Search);
+            ViewBag.Search = "";
             return View();
         }
      
